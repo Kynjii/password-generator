@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Generate a <br>
+            <span>random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+            <button id="generate-el">Generate passwords</button>
+            <hr class="solid" align="left"></hr>
+        </div>
+        <div class="password-el">
+            <div id="password-el1" onclick="copyToClipboard('password-el1')">
+                
+            </div>
+            <div id="password-el2" onclick="copyToClipboard('password-el2')">
+                
+            </div>
+        </div>
+        <div>
+            <p>Inlcude:</p>
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" id="symbols" name="Symbols">
+                    <span class="custom-checkbox"></span>
+                    Symbols
+                </label>
+            </div>
+            <div class="checkbox-container">
+                <label>            
+                    <input type="checkbox" id="numbers" name="Numbers">
+                    <span class="custom-checkbox"></span>
+                    Numbers
+                </label>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
